@@ -1,0 +1,55 @@
+############################################
+#CREANDO UN MARCO DE INTERFAZ 
+############################################
+import sys
+from PyQt6.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton, QVBoxLayout, QWidget
+from PyQt6.QtCore import Qt, QSize
+from PyQt6.QtGui import QFont, QPixmap
+
+############################################
+class Ventana(QWidget):
+    
+    
+    def __init__(self):
+        super().__init__()
+        self.inicializar_ui()
+        self.setStyleSheet("background-color: #ECECEC;")
+    
+    def inicializar_ui(self):
+        self.setWindowTitle("Aprendiendo GIT - Window")
+        self.setGeometry(100,100,500,500)
+        self.contenido()
+        self.adjustSize()
+        self.show()
+    
+    def contenido(self):
+        titulo = QLabel("Aprendiendo GIT")
+        titulo.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        titulo.setFont(QFont("Arial", 20)) 
+        
+        #imagen
+        imagen = QLabel()
+        pixmap = QPixmap("git.jpg")
+        imagen.setPixmap(pixmap)
+        imagen.setBaseSize(QSize(200,200))
+        imagen.setScaledContents(True)
+        imagen.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        
+        
+        imagen.setStyleSheet("border: 2px solid purple;")    
+
+        #Agregamos el layout del texto y la imagen.
+        layout = QVBoxLayout()
+        layout.addWidget(titulo)
+        layout.addWidget(imagen)
+        
+        self.setLayout(layout)
+     
+############################################
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    ventana = Ventana()
+    sys.exit(app.exec())
+    
+    
+    
