@@ -13,7 +13,7 @@ class Ventana(QWidget):
     def __init__(self):
         super().__init__()
         self.inicializar_ui()
-        self.setStyleSheet("background-color: #ECECEC;")
+        self.setStyleSheet("background-color: #000000;")
     
     def inicializar_ui(self):
         self.setWindowTitle("Aprendiendo GIT - Window")
@@ -25,7 +25,8 @@ class Ventana(QWidget):
     def contenido(self):
         titulo = QLabel("Aprendiendo GIT")
         titulo.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        titulo.setFont(QFont("Arial", 20)) 
+        titulo.setFont(QFont("Times New Roman", 25))
+        titulo.setStyleSheet("color: orange;")
         
         #imagen
         imagen = QLabel()
