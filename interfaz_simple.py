@@ -39,10 +39,18 @@ class Ventana(QWidget):
         
         imagen.setStyleSheet("border: 2px solid purple;")    
 
+        
+        boton = QPushButton("SALIR")
+        boton.setStyleSheet("background-color: purple; color: white; bold: true;")
+        boton.setFont(QFont("Times New Roman", 25))
+        boton.setFixedSize(100,50)
+        
+        
         #Agregamos el layout del texto y la imagen.
         layout = QVBoxLayout()
         layout.addWidget(titulo)
         layout.addWidget(imagen)
+        layout.addWidget(boton,alignment=Qt.AlignmentFlag.AlignCenter)
         
         self.setLayout(layout)
      
