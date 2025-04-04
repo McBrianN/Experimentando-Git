@@ -36,12 +36,12 @@ class Ventana(QWidget):
         imagen.setScaledContents(True)
         imagen.setAlignment(Qt.AlignmentFlag.AlignCenter)
         
-        
+
         imagen.setStyleSheet("border: 2px solid purple;")    
 
         
         boton = QPushButton("SALIR")
-        boton.setStyleSheet("background-color: purple; color: white; bold: true;")
+        boton.setStyleSheet("background-color: grey; color: black; bold: true;")
         boton.setFont(QFont("Times New Roman", 25))
         boton.setFixedSize(100,50)
         
