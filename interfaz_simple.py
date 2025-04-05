@@ -41,7 +41,7 @@ class Ventana(QWidget):
 
         
         boton = QPushButton("SALIR")
-        boton.setStyleSheet("background-color: purple; color: white; bold: true;")
+        boton.setStyleSheet("background-color: red; color: white; bold: true;")
         boton.setFont(QFont("Times New Roman", 25))
         boton.setFixedSize(100,50)
         
