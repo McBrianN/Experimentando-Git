@@ -23,7 +23,7 @@ class Ventana(QWidget):
         self.show()
     
     def contenido(self):
-        titulo = QLabel("Resolviendo conflictos de GIT")
+        titulo = QLabel("Aprendiendo GBFDHGFB")
         titulo.setAlignment(Qt.AlignmentFlag.AlignCenter)
         titulo.setFont(QFont("Times New Roman", 25))
         titulo.setStyleSheet("color: orange;")
