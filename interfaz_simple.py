@@ -23,11 +23,7 @@ class Ventana(QWidget):
         self.show()
     
     def contenido(self):
-<<<<<<< HEAD
-        titulo = QLabel("Todos son chupapititos")
-=======
-        titulo = QLabel("Aprendiendo a resolver conflictos!!!")
->>>>>>> ramaLu1
+        titulo = QLabel("Los burros del otro canal son unos panchitos")
         titulo.setAlignment(Qt.AlignmentFlag.AlignCenter)
         titulo.setFont(QFont("Times New Roman", 25))
         titulo.setStyleSheet("color: orange;")
